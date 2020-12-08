@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 module "aws_static_website" {
-  source = "cloudmaniac/static-website/aws"
+  source = "module/static-website"
 
   website-domain-main     = "example.com"
   website-domain-redirect = "www.example.com"
